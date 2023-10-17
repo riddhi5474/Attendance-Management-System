@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Students.css";
 
+
 function Students() {
   return (
     <div class="table-horizontal-container">
@@ -16,7 +17,15 @@ function Students() {
         <tbody>
           <tr>
             <td>
-              <img src="prof"/>
+              <img src="./profile.png"/>
+            </td>
+            <td>220002063</td>
+            <td>Riddhi Chandekar</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./profile.png"/>
             </td>
             <td>220002063</td>
             <td>Riddhi Chandekar</td>
@@ -24,7 +33,7 @@ function Students() {
           </tr>
           <tr>
             <td>
-              <img></img>
+              <img src="./profile.png"/>
             </td>
             <td>220002063</td>
             <td>Riddhi Chandekar</td>
@@ -32,7 +41,7 @@ function Students() {
           </tr>
           <tr>
             <td>
-              <img></img>
+              <img src="./profile.png"/>
             </td>
             <td>220002063</td>
             <td>Riddhi Chandekar</td>
@@ -40,23 +49,7 @@ function Students() {
           </tr>
           <tr>
             <td>
-              <img></img>
-            </td>
-            <td>220002063</td>
-            <td>Riddhi Chandekar</td>
-            <td>90%</td>
-          </tr>
-          <tr>
-            <td>
-              <img></img>
-            </td>
-            <td>220002063</td>
-            <td>Riddhi Chandekar</td>
-            <td>90%</td>
-          </tr>
-          <tr>
-            <td>
-              <img></img>
+              <img src="./profile.png"/>
             </td>
             <td>220002063</td>
             <td>Riddhi Chandekar</td>

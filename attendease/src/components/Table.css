@@ -1,4 +1,4 @@
-/* default styling. Nothing to do with freexing first row and column */
+/* default styling. Nothing to do with freexing first row and column
 main {display: flex;}
 main > * {border: 1px solid;}
 table {border-collapse: collapse; font-family: helvetica}
@@ -61,14 +61,14 @@ tbody {
 }
 
 /* MAKE LEFT COLUMN FIXEZ */
-tr > :first-child {
+/* tr > :first-child {
   position: -webkit-sticky;
   position: sticky; 
   
   left: 0; 
 }
 /* don't do this */
-tr > :first-child {
+/* tr > :first-child {
   box-shadow: inset 0px 1px black;
 }
 tr > :second-child {
@@ -78,9 +78,9 @@ tr > :second-child {
     left: 0; 
   }
   /* don't do this */
-  tr > :second-child {
+  /* tr > :second-child {
     box-shadow: inset 0px 1px black;
   }
 
 
-
+ */ 

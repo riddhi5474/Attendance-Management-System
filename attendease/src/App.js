@@ -7,18 +7,20 @@ import ImageSection from './components/ImageSection';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Table from './components/Table';
+import Today from './components/Today';
 
 
 function App() {
   return (
     <div>
-     <div><Navbar/></div>
-      <div><Hero/></div>
+    <div><Navbar/></div>
+    <div><Hero/></div>
     <div><ImageSection/></div>
-    <div><Table/></div>
     <div><Stats/></div>
-    <div className='Students'><Students/></div>
-    
+    <div><Today/></div>
+    {/* <div><Table/></div>
+    <Students/>
+     */}
 
     </div>
   );

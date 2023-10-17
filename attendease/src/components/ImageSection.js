@@ -21,7 +21,9 @@ function ImageUpload() {
       <div className="upload-btn-wrapper">
         <label className="custom-file-upload">
           <input type="file" accept="image/*" onChange={handleImageChange} />
-          Choose an Image
+          <div  class="gradient-button choose-image">
+            Choose an Image
+            </div>
         </label>
       </div>
       {selectedImage && (
