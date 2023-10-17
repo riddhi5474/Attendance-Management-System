@@ -8,9 +8,8 @@ function App() {
   return (
     <div>
 
-    <div><Table1 /></div>
     <div><Stats/></div>
-    <div><Students/></div>
+    <div className='Students'><Students/></div>
     </div>
   );
 }

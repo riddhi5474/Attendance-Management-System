@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./Students.css";
+
 function Students() {
   return (
     <div class="table-horizontal-container">
       <table class="unfixed-table">
-        <thead>
+        <thead class="gradient-text">
           <tr>
             <th>Photo</th>
             <th>Roll No</th>
@@ -15,7 +16,7 @@ function Students() {
         <tbody>
           <tr>
             <td>
-              <img src="profile.png"></img>
+              <img src="prof"/>
             </td>
             <td>220002063</td>
             <td>Riddhi Chandekar</td>

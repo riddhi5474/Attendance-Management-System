@@ -38,4 +38,16 @@
 }
 body{
   background-color: #282C32;
+  color: white;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #60A9FF, #D187FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Students{
+  width: 100%;
 }
