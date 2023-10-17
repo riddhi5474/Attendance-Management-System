@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Table1.css';
-function Table1() {
+import './Table.css';
+function Table() {
     return(
 <div class="table-container">
    
@@ -47,4 +47,4 @@ function Table1() {
 </div>
     );
 }
-export default Table1;
+export default Table;

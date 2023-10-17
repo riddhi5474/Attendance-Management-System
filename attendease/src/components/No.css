@@ -1,0 +1,275 @@
+
+
+button {
+  background: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*-------------Layout-------------*/
+body {
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+}
+
+#home {
+  background-color: #ddd;
+}
+
+#about {
+  background-color: #aaa;
+}
+
+#work {
+  background-color: #888;
+}
+
+#contact {
+  background-color: #666;
+}
+
+/*-------------Helpers-------------*/
+.skew {
+    transform: skew(-20deg);
+}
+
+.un-skew {
+    transform: skew(20deg);
+}
+
+/*-------------Nav-------------*/
+#nav-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#nav {
+  background-color: black;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-family: "Saira Semi Condensed", sans-serif;
+  height: 4em;
+  overflow: hidden;
+
+  &.nav-visible {
+      height: 100%;
+      overflow: auto;
+  }
+}
+
+.nav {
+  display: flex;
+  height: 4em;
+  line-height: 4em;
+  flex-grow: 1;
+}
+
+.nav-link,
+.logo {
+  padding: 0 1em;
+}
+
+span.gradient {
+  padding: 0 1em;
+  position: relative;
+  right: 1em;
+  margin-right: auto;
+
+  &:hover {
+      animation-name: logo-hover;
+      animation-duration: 0.3s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
+  }
+}
+
+h1.logo {
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 0.75em;
+  color: white;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add the following CSS for the active home button/link */
+.nav-link.active {
+  background-color: purple;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.btn-nav {
+  color: red;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@media (min-width: 800px) {
+  #nav-wrapper {
+    overflow: hidden;
+  }
+
+  #nav {
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  .nav-link {
+    border-top: none;
+  }
+
+  .right {
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    left: 1.5em;
+    height: auto;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+
+  
+  .nav-link-span {
+    
+    display: inline-block;
+  }
+
+  .nav-link {
+    
+   color:white;
+    text-decoration: none;
+
+    &:last-child {
+      padding-right: 3em;
+    }
+  }
+
+  a:hover.nav-link {
+    color:white;
+    background: #47063a;
+    background: linear-gradient(45deg,#47063a,purple);
+  }
+  a:after.nav-link{
+    background-color: yellow;
+  }
+ a.active::after.nav-link {
+  background: #47063a;
+  background: linear-gradient(45deg,#47063a,purple);
+}
+a:hover.nav-link {
+  color:white;
+  background: #47063a;
+  background: linear-gradient(45deg,#47063a,purple);
+}
+
+
+@keyframes logo-hover {
+  20% {
+    padding-right: 0em;
+  }
+  100% {
+    padding-right: 5em;
+  }
+}
+.login-button{
+color:white;
+background: #47063a;
+  background: linear-gradient(45deg,#47063a,purple);
+  height:40px;
+  margin-top: 15px;
+  margin-right:30px;
+  text-transform: uppercase;
+
+}
+}
+/* Reset some default styles for select elements */
+select {
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-box {
+  display: inline-block;
+  background-color: #363636;
+  color: #0099cc;
+  border: 1px solid #222;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.filter-box label {
+  display: block;
+  font-weight: bold;
+}
+
+.filter-box select {
+  width: 100%;
+  padding: 5px;
+  background-color: #222;
+  color: #0099cc;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.filter-box select:hover {
+  background-color: #333;
+}
+
+.filter-box select:focus {
+  background-color: #444;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.filter-box select option {
+  background-color: #363636;
+  color: #0099cc;
+}
+
+.filter-box select option:hover {
+  background-color: #444;
+}
+
