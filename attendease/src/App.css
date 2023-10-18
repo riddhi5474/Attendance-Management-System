@@ -8,6 +8,7 @@ body{
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+ 
 }
 .gradient-button {
   background: linear-gradient(135deg, #60A9FF, #D187FF);
@@ -21,4 +22,7 @@ body{
 
 .Students{
   width: 100%;
+}
+.yay{
+  margin-top:100px;
 }
